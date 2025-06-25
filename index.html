@@ -9,14 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Chosen Palette: Brilliant Blues (Adapted) -->
+    <!-- Chosen Palette: Gray, Green & Deep Blue -->
     <!-- Application Structure Plan: La aplicación se estructura como una narrativa visual de una sola página con desplazamiento vertical, guiada por una barra de navegación fija. La secuencia es la siguiente: 1) Título y Objetivo como gancho inicial. 2) Alcance de Servicios presentado en tarjetas visuales. 3) Análisis detallado y comparativa de las Opciones y Tecnologías en columnas lado a lado, presentando los costos por escrito. 4) Proceso y Términos presentados como un flujo claro. Se eliminó el gráfico para presentar la información de costos de forma más directa junto a las características de cada opción, simplificando la estructura y enfocando la decisión en la comparación de características y precios. -->
     <!-- Visualization & Content Choices: 1. Costos (Report Info) -> Comparar (Goal) -> Texto destacado dentro de las tarjetas de opciones (Presentation Method) -> Integra el precio directamente con las características para una comparación más contextual. HTML/Tailwind (Method). 2. Alcance de Servicios (Report Info) -> Informar/Organizar (Goal) -> Tarjetas con Iconos (Presentation Method) -> Desglosa los servicios en componentes visuales para mejorar la legibilidad. HTML/Tailwind/Unicode (Method). 3. Términos y Proceso (Report Info) -> Organizar (Goal) -> Lista estilizada y numerada (Presentation Method) -> Presenta los pasos y condiciones del proyecto de forma clara y secuencial. HTML/Tailwind/Unicode (Method). -->
     <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8fafc;
+            background-color: #f3f4f6;
             color: #1e293b;
         }
         .nav-link {
@@ -25,8 +25,8 @@
             padding-bottom: 4px;
         }
         .nav-link:hover {
-            color: #0A2463;
-            border-bottom-color: #0A2463;
+            color: #1e3a8a;
+            border-bottom-color: #1e3a8a;
         }
         .card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -39,22 +39,25 @@
 </head>
 <body class="antialiased">
 
-    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 shadow-md">
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 shadow-sm">
         <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <h1 class="text-xl font-bold text-[#0A2463]">Propuesta de Desarrollo Web</h1>
+            <div class="flex items-center space-x-3">
+                <img src="https://content.googleapis.com/v1/files/uploaded:Logo%20bigdatia.png-90550f14-add2-48a8-9b1f-c5d34ddb9a7b?alt=media" alt="Logo BigdatIA" class="h-8 w-auto">
+                <span class="text-lg font-bold text-slate-800">Propuesta de Desarrollo Web</span>
+            </div>
             <div class="hidden md:flex items-center space-x-8">
                 <a href="#servicios" class="nav-link text-slate-600 font-medium">Servicios</a>
                 <a href="#tecnologias" class="nav-link text-slate-600 font-medium">Opciones</a>
                 <a href="#proceso" class="nav-link text-slate-600 font-medium">Proceso</a>
             </div>
-            <a href="#tecnologias" class="bg-[#D8315B] text-white font-bold py-2 px-5 rounded-full hover:bg-opacity-90 transition-all text-sm">Ver Opciones</a>
+            <a href="#tecnologias" class="bg-emerald-600 text-white font-bold py-2 px-5 rounded-full hover:bg-emerald-700 transition-all text-sm">Ver Opciones</a>
         </nav>
     </header>
 
     <main class="container mx-auto px-6">
         
         <section id="introduccion" class="text-center py-20 md:py-28">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-[#0A2463] mb-4">Un Sitio Web Moderno y Confiable para su Firma</h2>
+            <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4">Un Sitio Web Moderno y Confiable para su Firma</h2>
             <p class="max-w-3xl mx-auto text-slate-600 text-lg md:text-xl">
                 Nuestro objetivo es crear un sitio web corporativo que sirva como su principal canal de comunicación y captación de clientes, proyectando la solidez, experiencia y confianza que su firma representa.
             </p>
@@ -66,32 +69,32 @@
                 <p class="mt-3 text-lg text-slate-500 max-w-2xl mx-auto">Cada proyecto incluye un conjunto completo de características para asegurar el éxito de su presencia en línea.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="card bg-white p-8 rounded-xl shadow-lg border-t-4 border-[#3E92CC]">
+                <div class="card bg-white p-8 rounded-xl shadow-lg border-t-4 border-emerald-500">
                     <div class="text-4xl mb-4">🏠</div>
                     <h4 class="font-bold text-xl text-slate-900 mb-2">Página de Inicio</h4>
                     <p class="text-slate-600">Diseño atractivo y profesional que presenta sus áreas de práctica y valores.</p>
                 </div>
-                <div class="card bg-white p-8 rounded-xl shadow-lg border-t-4 border-[#3E92CC]">
+                <div class="card bg-white p-8 rounded-xl shadow-lg border-t-4 border-emerald-500">
                     <div class="text-4xl mb-4">📂</div>
                     <h4 class="font-bold text-xl text-slate-900 mb-2">4 Secciones Internas</h4>
                     <p class="text-slate-600">Nuestra Firma, Áreas de Práctica, Equipo y Contacto con llamado a la acción.</p>
                 </div>
-                <div class="card bg-white p-8 rounded-xl shadow-lg border-t-4 border-[#3E92CC]">
+                <div class="card bg-white p-8 rounded-xl shadow-lg border-t-4 border-emerald-500">
                     <div class="text-4xl mb-4">📱</div>
                     <h4 class="font-bold text-xl text-slate-900 mb-2">Diseño Adaptable</h4>
                     <p class="text-slate-600">Experiencia de usuario perfecta en computadoras, tabletas y móviles.</p>
                 </div>
-                <div class="card bg-white p-8 rounded-xl shadow-lg border-t-4 border-[#3E92CC]">
+                <div class="card bg-white p-8 rounded-xl shadow-lg border-t-4 border-emerald-500">
                     <div class="text-4xl mb-4">🔍</div>
                     <h4 class="font-bold text-xl text-slate-900 mb-2">Optimización SEO</h4>
                     <p class="text-slate-600">Estructura técnica optimizada para ser encontrada en motores de búsqueda.</p>
                 </div>
-                <div class="card bg-white p-8 rounded-xl shadow-lg border-t-4 border-[#3E92CC]">
+                <div class="card bg-white p-8 rounded-xl shadow-lg border-t-4 border-emerald-500">
                     <div class="text-4xl mb-4">💬</div>
                     <h4 class="font-bold text-xl text-slate-900 mb-2">Botón de Acción</h4>
                     <p class="text-slate-600">Acceso directo para que los clientes potenciales soliciten información fácilmente.</p>
                 </div>
-                 <div class="card bg-white p-8 rounded-xl shadow-lg border-t-4 border-[#3E92CC]">
+                 <div class="card bg-white p-8 rounded-xl shadow-lg border-t-4 border-emerald-500">
                     <div class="text-4xl mb-4">🛡️</div>
                     <h4 class="font-bold text-xl text-slate-900 mb-2">Seguridad Básica</h4>
                     <p class="text-slate-600">Implementación de medidas esenciales para proteger su sitio web y sus datos.</p>
@@ -105,9 +108,9 @@
                 <p class="mt-3 text-lg text-slate-500 max-w-2xl mx-auto">Un análisis detallado de las ventajas de cada plataforma para ayudarle a elegir la más adecuada para sus metas a largo plazo.</p>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-                <div class="bg-white p-8 rounded-xl shadow-xl border-2 border-[#D8315B] relative">
-                    <div class="absolute top-0 -right-4 bg-[#D8315B] text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg" style="transform: rotate(10deg);">Recomendada para su caso</div>
-                    <h4 class="text-2xl font-bold text-[#0A2463] mb-2">WordPress (CMS)</h4>
+                <div class="bg-white p-8 rounded-xl shadow-xl border-2 border-emerald-500 relative">
+                    <div class="absolute top-0 -right-4 bg-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg" style="transform: rotate(10deg);">Recomendada para su caso</div>
+                    <h4 class="text-2xl font-bold text-slate-900 mb-2">WordPress (CMS)</h4>
                     <p class="text-2xl font-bold text-slate-800 mb-4">$1,400,000 COP</p>
                     <p class="text-slate-600 mb-6">La solución ideal para quienes buscan autonomía y flexibilidad para gestionar su contenido de forma continua.</p>
                     <ul class="space-y-4 text-slate-700">
@@ -119,7 +122,7 @@
                     </ul>
                 </div>
                 <div class="bg-white p-8 rounded-xl shadow-lg">
-                    <h4 class="text-2xl font-bold text-[#0A2463] mb-2">HTML Estático</h4>
+                    <h4 class="text-2xl font-bold text-slate-900 mb-2">HTML Estático</h4>
                     <p class="text-2xl font-bold text-slate-800 mb-4">$2,000,000 COP</p>
                     <p class="text-slate-600 mb-6">La opción perfecta para quienes priorizan la máxima velocidad, seguridad y un bajo mantenimiento.</p>
                     <ul class="space-y-4 text-slate-700">
@@ -141,21 +144,21 @@
             <div class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-xl">
                 <ol class="space-y-8">
                     <li class="flex items-start">
-                        <div class="flex-shrink-0 bg-[#0A2463] text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg mr-6">1</div>
+                        <div class="flex-shrink-0 bg-slate-800 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg mr-6">1</div>
                         <div>
                             <h5 class="font-bold text-lg text-slate-900">Inicio del Proyecto</h5>
                             <p class="text-slate-600">Se requiere un anticipo del 50% para comenzar. El tiempo de entrega (5-7 días hábiles) inicia al recibir todo el material (logos, textos, etc.).</p>
                         </div>
                     </li>
                     <li class="flex items-start">
-                        <div class="flex-shrink-0 bg-[#0A2463] text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg mr-6">2</div>
+                        <div class="flex-shrink-0 bg-slate-800 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg mr-6">2</div>
                         <div>
                             <h5 class="font-bold text-lg text-slate-900">Revisión y Ajustes</h5>
                             <p class="text-slate-600">Al finalizar el tiempo de entrega, se agenda una reunión de revisión. Si se requieren cambios, se tomarán 3 días hábiles adicionales.</p>
                         </div>
                     </li>
                     <li class="flex items-start">
-                        <div class="flex-shrink-0 bg-[#0A2463] text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg mr-6">3</div>
+                        <div class="flex-shrink-0 bg-slate-800 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg mr-6">3</div>
                         <div>
                             <h5 class="font-bold text-lg text-slate-900">Entrega Final</h5>
                             <p class="text-slate-600">El 50% restante se abona antes de la publicación final del sitio. Hosting y dominio no están incluidos, pero se pueden cotizar aparte.</p>
@@ -167,9 +170,10 @@
 
     </main>
     
-    <footer class="bg-[#1E1B18] text-white mt-16">
+    <footer class="bg-slate-900 text-white mt-16">
         <div class="container mx-auto px-6 py-8 text-center">
-            <p>&copy; 2025 Propuesta de Desarrollo Web BigdatIA. Todos los derechos reservados.</p>
+             <img src="https://content.googleapis.com/v1/files/uploaded:Logo%20bigdatia.png-90550f14-add2-48a8-9b1f-c5d34ddb9a7b?alt=media" alt="Logo BigdatIA" class="h-10 w-auto mx-auto mb-4" style="filter: invert(1);">
+            <p>&copy; 2025 Propuesta de Desarrollo Web. Todos los derechos reservados.</p>
         </div>
     </footer>
 
